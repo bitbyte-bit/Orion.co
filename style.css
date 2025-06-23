@@ -1,7 +1,7 @@
 body{
-    background-color: rgba(227, 227, 245, 0.048);
+    background-color: rgb(227, 227, 245, 0.048);
     text-align: center;
-    color:white;
+    color:black;
     font-family: sans-serif;
 }
 .loader{
@@ -64,7 +64,7 @@ body{
 }
 .display{
     padding:10px;
-    background-color:rgba(227, 227, 245, 0.048);
+    background-color:rgb(227, 227, 245, 0.048);
     
 }
 .notify{
@@ -82,6 +82,7 @@ body{
     position:fixed;
     top:0;
     right:0;
+    color:white;
     padding:10px;
     border:1px solid grey;
     border-radius:0 0 0 10px;
@@ -163,7 +164,7 @@ body{
     justify-content: center;
 }
 .service-card{
-    background-color:rgba(227, 227, 245, 0.048);
+    background-color:rgb(227, 227, 245, 0.048);
     padding:30px 20px;
     border-radius:10px;
     width:250px;
@@ -192,6 +193,7 @@ body{
     top:0;
     bottom:0;
     right:0;
+    color:white;
     left:0;
     display: none;
 }
@@ -202,6 +204,7 @@ body{
     bottom:0;
     right:0;
     left:0;
+    color:white;
     justify-content: center;
     text-align: center;
 }
@@ -313,6 +316,7 @@ a:active{
     position: fixed;
     right:0;
     left:0;
+    color:white;
     bottom:0;
     text-align: center;
     justify-content: center;
@@ -378,6 +382,7 @@ a:active{
 }
 .cart-popup{
     background-color:rgb(43, 43, 48);
+    color:white;
 }
 .cart-header{
     background-color:rgb(40, 40, 126);
