@@ -1,0 +1,35 @@
+body{
+    background-color:rgb(27, 27, 41);
+    text-align: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.terms-head{
+    font-size: 25px;
+    text-transform: uppercase;
+    background-color: rgb(28, 28, 87);
+    padding: 10px;
+    margin-top:0;
+}
+.field-set{
+    border-radius:0 10px 10px 0;
+    border-left:0;
+    margin:10px;
+    text-align: start;
+    box-shadow: 2px 5px 15px black;
+
+}
+.legend{
+    color:gray;
+    text-align: start;
+    text-transform: capitalize;
+}
+
+.home-button{
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    color:white;
+    font-size: 24px;
+    cursor:pointer;
+}

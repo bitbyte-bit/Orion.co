@@ -1,0 +1,398 @@
+body{
+    background-color: rgba(227, 227, 245, 0.048);
+    text-align: center;
+    color:white;
+    font-family: sans-serif;
+}
+.loader{
+    position:fixed;
+    background-color: rgb(43, 43, 48);
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+}
+.loader-text{
+    text-transform: capitalize;
+    color:blue;
+}
+.circle{
+    position:fixed;
+    top:50%;
+    left:50%;
+    width:0;
+    height: 0;
+    border-radius:50%;
+    transform: translate(-50%,-50%);
+    animation:pulse 2s infinite ease-in-out;
+}
+@keyframes pulse {
+    0%{
+        width:0;
+        height: 0;
+        opacity: 1;
+        background-color: red;
+    }
+    25%{
+        background-color: orange;
+    }
+    50%{
+        background-color: yellow;
+    }
+    75%{
+        background-color: green;
+    }
+    100%{
+        width:10rem;
+        height:10rem;
+        opacity: 0;
+        background-color: blue;
+    }
+}
+.heads{
+    display: flex;
+    justify-content: space-between;   
+    text-transform: capitalize;
+    font-weight: bold;
+    border-bottom:1px solid grey;
+    border-radius: 10px;
+    padding:0 10px;
+}
+#headLine{
+    border-radius:10px;
+    cursor:pointer
+}
+.display{
+    padding:10px;
+    background-color:rgba(227, 227, 245, 0.048);
+    
+}
+.notify{
+    position:fixed;
+    bottom:0;
+    text-align: center;
+    right:0;
+    left: 0;
+    border-top:1px solid grey;
+    padding: 5px;
+    background-color: rgb(43, 43, 48);
+    display:none;
+}
+.menu-bar{
+    position:fixed;
+    top:0;
+    right:0;
+    padding:10px;
+    border:1px solid grey;
+    border-radius:0 0 0 10px;
+    max-width: 300px;
+    background-color:rgb(43, 43, 48);
+}
+.menu-title{
+    text-transform: uppercase;
+}
+.menu-header{
+    background-color: white;
+}
+.menu-footer{
+    border-top:1px solid grey;
+    padding:10px;
+}
+.social-section{
+    padding:10px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.menu-item{
+    text-align: start;
+}
+.menu-item:hover{
+    background-color: rgb(40, 40, 126);
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    right:2%;
+    left:2%;
+}
+.card{
+    background-color: rgba(227, 227, 245, 0.048);
+    border:1px solid grey;
+    border-radius:5px;
+    flex-basis: 200;
+    margin:2px;
+}
+.card:hover{
+    border:1px solid transparent;
+}
+.image{
+    max-width:150px;
+    height:max-content;
+    border-radius:5px 5px 0 0;
+}
+.buyBtn{
+    background-color:transparent
+    ;
+    border:0;
+    padding:2px 10px;
+    border-radius:5px;
+    margin:2px;
+    color:gray;
+    cursor:pointer;
+}
+.buyBtn:active{
+    background-color: rgb(40, 40, 126);
+}
+.cartBtn{
+    background-color:transparent;
+    border:0;
+    border-radius:5px;
+    padding:2px 10px;
+    margin:2px;
+    color:grey;
+    cursor: pointer;
+}
+.cartBtn:active{
+    background-color: rgb(40, 40, 126);
+}
+/* services cascading stylesheet */
+.services-grid{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service-card{
+    background-color:rgba(227, 227, 245, 0.048);
+    padding:30px 20px;
+    border-radius:10px;
+    width:250px;
+    margin:2px;
+    border:1px solid grey;
+}
+.service-card:hover{
+    border:1px solid transparent;
+}
+.deal-card{
+    padding:10px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.deal{
+    margin:2px;
+    border:1px solid grey;
+    background-color: rgba(227, 227, 245, 0.048);
+    border-radius: 5px;
+}
+.about-modal{
+    position:fixed;
+    background-color:rgb(40, 40, 126);
+    display: block;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    display: none;
+}
+.signup-modal{
+    background-color:rgb(43, 43, 48);
+    position: fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    justify-content: center;
+    text-align: center;
+}
+.signup-header{
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    border-bottom: 1px solid grey;
+    color:white;
+    background-color: rgb(40, 40, 126);
+    border:0;
+}
+.my-form{
+    margin-top:5%;
+    margin-right:5%;
+    margin-left:5%;
+    border-radius:10px;
+    padding:10px;
+    box-shadow:0 4px 67px black;
+    max-width: 400px;
+    border:1px solid grey;
+}
+input[type='email'],[type='password'],[type='text']{
+    padding:10px 20px;
+    width:250px;
+    border-radius:10px;
+    border:0;
+    margin:5px;
+    background-color: rgba(0, 0, 0, 0.397);
+    color:greenyellow;
+}
+p[type='notice']{
+    padding:5px 20px;
+    width:250px;
+    background-color: transparent;
+    border:0;
+}
+button[type='submit']{
+    padding:10px 20px;
+    border:0;
+    border-radius: 5px;
+    background-color: rgb(40, 40, 126);
+    color:white;
+    cursor: pointer;
+}
+input[type='number']{
+    padding:10px 20px;
+    width:250px;
+    border-radius:10px;
+    border:0;
+    margin:5px;
+    background-color: rgba(0, 0, 0, 0.397);
+    color:greenyellow;
+}
+input[type='radio']{
+    margin-top:10px;
+}
+a{
+    color:rgb(7, 223, 18);
+    cursor: pointer;
+}
+a:active{
+    color:red;
+}
+.take-deal{
+    padding:5px 10px;
+    margin:5px;
+    border-radius:5px;
+    background-color: transparent;
+    color: grey;
+    text-transform: capitalize;
+    border:0;
+    border-top:1px solid rgb(40, 40, 126);
+    cursor: pointer;
+}
+.deal-name{
+    text-transform: capitalize;
+    max-width: 150px;
+}
+.deal-price{
+    color:green;
+}
+.negotiator{
+    background-color:rgb(43, 43, 48);
+    position: fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+}
+.neg-title{
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    text-transform:capitalize;
+    font-size:20px;
+    padding:0  0 10px 0;
+    border-bottom:1px solid gray;
+}
+.take-deal:active{
+    background-color:rgb(40, 40, 126);
+    color:white;
+}
+.profile{
+    background-color:rgb(43, 43, 48);
+    top:0;
+    padding:20px;
+    position: fixed;
+    right:0;
+    left:0;
+    bottom:0;
+    text-align: center;
+    justify-content: center;
+}
+.p-header{
+    background-color:rgb(40, 40, 126);
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+    .p-title{
+        margin-left:20px;
+        text-transform: uppercase;
+        font-size:20px;
+    }
+    #close-p{
+        font-size:24px;
+        margin:15px;
+        cursor: pointer;
+    }
+}
+.user-details{
+    border: 1px solid gray;
+    margin-top:18%;
+    justify-content: center;
+    border-radius:10px;
+    box-shadow:0 4px 67px black;
+    padding: 20px;
+    .profile-txt{
+        padding:10px;
+        border-bottom:1px solid grey;
+        text-align: start;
+        text-transform: capitalize;
+
+    }
+}
+.cart-icon{
+    position: fixed;
+    bottom:0;
+    right:0;
+    display: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    ;
+}
+.opener1{
+    color:white;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-shadow:0 5px 2px blue;
+}
+.buy-pop{
+    background-color: rgb(35, 35, 70);
+    padding:20px;
+    width:200px;
+}
+.cart-popup{
+    background-color:rgb(43, 43, 48);
+}
+.cart-header{
+    background-color:rgb(40, 40, 126);
+}
+.cart-footer{
+    background-color:rgb(43, 43, 48);
+    
+}
+.cart-msg{
+    background-color: rgb(35, 35, 70);
+    width:200px;
+    
+}
+.item-name{
+    margin-top:10px;
+    max-width: 150px;
+    text-transform: capitalize;
+}
